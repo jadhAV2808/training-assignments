@@ -26,6 +26,7 @@ public class Second {
 				System.out.print(sum+" ");
 		}
 
+		sc.close();
 	}
 
 }

@@ -11,10 +11,12 @@ public class Fourth {
 		System.out.println("Enter sub1 marks :-");
 		int s1=sc.nextInt();
 		
-		System.out.println("Enter sub2 marks :-");
+		//System.out.println("Enter sub2 marks :-");
+		
 		int s2=sc.nextInt();
 		
 		System.out.println("Enter sub3 marks :-");
+		
 		int s3=sc.nextInt();
 
 		if(s1>60 & s2>60 & s3>60)
@@ -23,6 +25,8 @@ public class Fourth {
 			System.out.print("POMOTED");
 		else
 			System.out.print("FAIL");
+		
+		sc.close();
 			
 	}
 

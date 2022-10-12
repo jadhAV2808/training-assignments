@@ -28,6 +28,9 @@ public class First {
 	else
 		System.out.println("number is NOT Armstrong");
 	
+	
+	sc.close();
   }
+	
 	
 }
