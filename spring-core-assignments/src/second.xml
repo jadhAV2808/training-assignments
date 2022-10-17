@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <context:component-scan base-package="com.zetcode"/>
+
+   <!-- 1 first list approach
+    <util:list id="list-of-answers" value-type="java.lang.String">
+        <value>Seema</value>
+        <value>Swati</value>
+        <value>Saavi</value>
+        <value>Shiva</value>
+        <value>Sirii</value>
+        <value>Shivi</value>
+    </util:list>
+    
+ -->   
+ 
+    <bean id = "questionlist" class = "com.second.springcore.Question">
+	    <property name="questionId" value="101"></property>
+	    <property name="question" value="list all your friends"></property>
+	    <property name="answers" >
+		    <list>
+			    <value>Seema</value>
+			    <value>Swati</value>
+			    <value>Saavi</value>
+			    <value>Shiva</value>
+			    <value>Shivi</value>
+			    <value>Sirii</value>
+		    </list>
+	    </property>
+    
+	    <property name="ansSet">
+	    	<set>
+	    		 <value>Seema</value>
+			    <value>Swati</value>
+			    <value>Saavi</value>
+			    <value>Shiva</value>
+			    <value>Shivi</value>
+			    <value>Sirii</value>
+	    	</set>
+	    </property>
+    
+	     <property name="ansMap">
+	     <map>
+	     <entry key="1" value="Swati Mishra"></entry>
+	     <entry key="2" value="Orange "></entry>
+	     <entry key="3" value="Shivi"></entry>
+	     </map>
+	     </property>
+	    
+    </bean> 
+
+</beans>

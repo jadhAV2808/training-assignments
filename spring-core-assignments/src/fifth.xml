@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <context:component-scan base-package="com.zetcode"/>
+   
+    <context:annotation-config/>
+
+  
+  
+ 
+    <bean id = "student" class = "com.fifth.springcore.Student">
+	    <property name="id" value="101"></property>
+	    <property name="name" value="pooja jadhav"></property> 
+<!--    <property name="college" ref="college"></property>        -->
+    </bean> 
+    
+    <bean id="college" class="com.fifth.springcore.College">
+    <property name="collegeName" value="CSMSS College"></property>
+    <property name="collegeLocation" value="Auranabad"></property>
+    </bean>
+
+</beans>

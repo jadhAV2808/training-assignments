@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    
+    <!-- setter injection 
+   <bean id = "Customer" class = "com.first.springcore.Customer">
+    <property name="customerId" value="101"></property>
+    <property name="customerName" value="Nilima Chavan"></property>
+    <property name="customerContact" value="8007674567"></property>
+    <property name="address" ref="address"></property>
+   </bean>
+   
+   
+   <bean id = "address" class = "com.first.springcore.Address">
+    <property name="street" value="MG-Road"></property>
+    <property name="city" value="Pune"></property>
+    <property name="state" value="Maharashtra"></property>
+    <property name="zip" value="431007"></property>
+    <property name="country" value="India"></property>
+   </bean>
+  
+  -->
+  
+  
+   
+   <!--  constructor  injection  --> 
+   <bean id = "Customer" class = "com.first.springcore.Customer">
+	    <constructor-arg  value="101"></constructor-arg>
+	    <constructor-arg  value="Nilima Chava"></constructor-arg>  
+	    <constructor-arg  value="800767456"></constructor-arg>  
+	    <constructor-arg  ref="address"></constructor-arg>
+    </bean>
+    
+    
+     <bean id = "address" class = "com.first.springcore.Address">
+     	<constructor-arg  value="MG-Road"></constructor-arg>
+	    <constructor-arg  value="Pune"></constructor-arg>  
+	    <constructor-arg  value="Maharashtra"></constructor-arg>
+	    <constructor-arg  value="431007"></constructor-arg>
+	    <constructor-arg  value="India"></constructor-arg>
+     </bean>
+   
+ 
+ 
+
+</beans>
